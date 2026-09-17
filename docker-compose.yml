@@ -1,0 +1,11 @@
+services:
+  webhook-lab:
+    build: .
+    image: webhook-lab:latest
+    container_name: webhook-lab
+    ports:
+      - "8000:8000"
+    volumes:
+      # SQLite 数据库持久化：刷新页面 / 容器重启后状态不丢失
+      - ./data:/data
+    restart: unless-stopped

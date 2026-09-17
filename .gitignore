@@ -1,0 +1,11 @@
+# 本地数据与虚拟环境
+data/*
+!data/.gitkeep
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+.pytest_cache/

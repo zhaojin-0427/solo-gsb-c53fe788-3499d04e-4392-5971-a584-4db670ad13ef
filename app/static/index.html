@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webhook 故障演练与回放台</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🪝 Webhook 故障演练与回放台</div>
+    <nav>
+      <a href="#/scenarios" data-route="scenarios">场景</a>
+      <a href="#/compare" data-route="compare">分支对比</a>
+      <a href="#/effects" data-route="effects">已确认投递</a>
+    </nav>
+    <div id="sse-status" class="sse-status" title="SSE 连接状态">未连接</div>
+  </header>
+
+  <main id="view"></main>
+
+  <div id="toast" class="toast hidden"></div>
+  <div id="modal-root"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
