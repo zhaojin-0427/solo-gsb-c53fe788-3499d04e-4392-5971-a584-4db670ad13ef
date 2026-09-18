@@ -1,0 +1,13 @@
+services:
+  webhook-console:
+    build: .
+    image: webhook-replay-console:latest
+    container_name: webhook-replay-console
+    ports:
+      - "8000:8000"
+    volumes:
+      - wh-data:/data
+    restart: unless-stopped
+
+volumes:
+  wh-data:
